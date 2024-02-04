@@ -66,6 +66,7 @@
     "@vinejs/vine": "^1.7.1",
     "edge-iconify": "^2.0.1",
     "edge.js": "^6.0.1",
+    "htmx.org": "^1.9.10",
     "luxon": "^3.4.4",
     "reflect-metadata": "^0.2.1",
     "sqlite3": "^5.1.7"
