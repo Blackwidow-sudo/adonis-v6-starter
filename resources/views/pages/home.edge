@@ -3,10 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> AdonisJS - A fully featured web framework for Node.js </title>
+  <title>AdonisJS - A fully featured web framework for Node.js</title>
   @vite(['resources/js/app.js'])
 </head>
 <body class="dark:bg-gray-900 dark:text-white antialiased">
-  <h1>{{ t('ui.greeting') }}</h1>
+  <header>
+    <h1 class="font-bold text-2xl text-center">
+      {{ t('ui.greeting') }}
+    </h1>
+  </header>
+  <main class="container mx-auto">
+    <div
+      x-data="{ input: '' }"
+      class="flex flex-col max-w-sm mt-10 p-4 space-y-2">
+      <span>Im a reactive component powered by AlpineJS</span>
+      <input
+        x-model="input"
+        class="p-2 dark:bg-gray-700 border rounded-lg" 
+        type="text"
+        placeholder="Type something...">
+      <span x-text="input"></span>
+    </div>
+  </main>
 </body>
 </html>
